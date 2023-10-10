@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=0.5%, initial-scale=500.0;"margin: 0 auto>
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <body style="background-color:aqua;">
+        <div style="text-align: center;">    
+    <div class="container">
+        <h1>Survey Form</h1>
+        <form id="survey-form">
+            <div style="background-color:white" margin: 0 auto;><class="container">
+                <div style="margin: 0cap;"></div>
+                <br>
+            <div class="form-group">
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" name="first-name" required>
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name" name="last-name" required>
+
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="country">Country:</label>
+                <select id="country" name="country" required>
+                    <option value="">Select</option>
+                    <option value="us">India</option>
+                    <option value="ca">Other</option>
+                    <!-- Add more countries as needed -->
+                </select>
+            </div>
+            <br>
+            <div class="form-group">
+                <label>Gender:</label>
+                <input type="checkbox" id="male" name="gender" value="Male">
+                <label for="male">Male</label>
+                <input type="checkbox" id="female" name="gender" value="Female">
+                <label for="female">Female</label>
+                <input type="checkbox" id="other" name="gender" value="other">
+                <label for="Other">Other</label>
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="profession">Profession:</label>
+                <input type="text" id="profession" name="profession" required>
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="mobile">Mobile Number:</label>
+                <input type="tel" id="mobile" name="mobile" required>
+            </div>
+            <br>
+            <div class="button-group">
+                <button type="button" id="submit-button">Submit</button>
+                <button type="button" id="reset-button">Reset</button>
+            </div>
+            <br>
+        </form>
+    </div>
+    <br>
+    <div class="footer">
+        &copy; 2023 Customer Survey Form. All Rights Reserved. Design by <span style="color: blue;"> Shivani Sugandhi.</p>
+    </div>
+    <br>
+    <script src="script.js"></script>
+        </div>
+    </div>
+    <br>
+</body>
+</html>

@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Background color for the entire page */
+}
+
+.calculator {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background-color: #fff; /* Background color for the calculator */
+}
+
+input[type="text"] {
+    width: 100%;
+    font-size: 20px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: white !important; /* Background color for the result display */
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    font-size: 20px;
+    padding: 10px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+/* Background color for different button types */
+.number-buttons button {
+    background-color: #000; /* Black background for numbers */
+}
+
+.symbol-buttons button {
+    background-color: #d3d3d3; /* Pencil color for symbols */
+}
+
+#clear-button {
+    background-color: #00cc00; /* Green background for the "AC" button */
+}
+
+button:hover {
+    background-color: #555;
+}
+

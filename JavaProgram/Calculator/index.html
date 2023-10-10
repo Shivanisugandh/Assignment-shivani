@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator">
+        <div style="text-align: center;"> 
+        <input type="text" id="display" readonly>
+        <div class="buttons">
+            <button style="background-color: aquamarine;" id="clear-button" onclick="clearDisplay()">C</button>
+            <br>
+            </div>
+            <!-- First Row -->
+            <div style="color:  steelblue";class="button-row">
+                <button style="color:  blue"; onclick="appendToDisplay('7')">7</button>
+                <button style="color:  blue"; onclick="appendToDisplay('8')">8</button>
+                <button style="color:  blue"; onclick="appendToDisplay('9')">9</button>
+                <button style="color:  blue"; onclick="appendToDisplay('+')">+</button>
+            </div>
+            <br>
+            <!-- Second Row -->
+            <div style="color:  steelblue" class="button-row">
+                <button style="color:  blue"; onclick="appendToDisplay('4')">4</button>
+                <button style="color:  blue"; onclick="appendToDisplay('5')">5</button>
+                <button style="color:  blue"; onclick="appendToDisplay('6')">6</button>
+                <button style="color:  blue"; onclick="appendToDisplay('-')">-</button>
+            </div>
+            <br>
+            <!-- Third Row -->
+            <div style="color:  steelblue" class="button-row">
+                <button style="color:  blue"; onclick="appendToDisplay('1')">1</button>
+                <button style="color:  blue"; onclick="appendToDisplay('2')">2</button>
+                <button style="color:  blue"; onclick="appendToDisplay('3')">3</button>
+                <button style="color:  blue"; onclick="appendToDisplay('*')">*</button>
+            </div>
+            <br>
+            <!-- Fourth Row -->
+            <div style="color:  steelblue" class="button-row">
+                <button style="color:  blue"; onclick="appendToDisplay('0')">0</button>
+                <button style="color:  blue"; onclick="appendToDisplay('.')">.</button>
+                <button style="color:  blue"; onclick="calculate()">=</button>
+                <button style="color:  blue"; onclick="appendToDisplay('/')">/</button>
+            </div>
+            <br>
+        </div>
+        <br>
+    </div>
+    <br>
+    
+    <script src="script.js"></script>
+</body>
+</html>
